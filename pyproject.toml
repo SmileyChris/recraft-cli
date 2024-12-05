@@ -1,0 +1,13 @@
+[project]
+name = "recraft-cli"
+version = "0.1.0"
+description = "Recraft API CLI"
+readme = "README.md"
+requires-python = ">=3.12"
+dependencies = ["httpx", "keyring", "click", "tqdm"]
+
+[project.scripts]
+recraft = "recraft.cli:main"
+
+[tool.uv]
+package = true
